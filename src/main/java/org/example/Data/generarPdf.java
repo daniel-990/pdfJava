@@ -12,32 +12,23 @@ public class generarPdf {
 
         Producto producto = new Producto();
 
-        String HTML = "<h1>Ficha de producto final</h1>"
-                + "<p>Nombre: "+producto.getNombreProducto()+"</p>"
-                + "<p>Precio: "+producto.getNombreProducto()+"</p>"
-                + "<p>Nombre: "+producto.getNombreProducto()+"</p>"
-                + "<p>Nombre: "+producto.getNombreProducto()+"</p>";
-
-        String HTMl = "<table>\n" +
+        String HTMlRender = "<table>\n" +
                 "  <tr>\n" +
                 "    <th>Nombre</th>\n" +
                 "    <th>Precio</th>\n" +
-                "    <th>Country</th>\n" +
+                "    <th>descripcion</th>\n" +
+                "    <th>categoria</th>\n" +
                 "  </tr>\n" +
                 "  <tr>\n" +
-                "    <td>Alfreds Futterkiste</td>\n" +
-                "    <td>Maria Anders</td>\n" +
-                "    <td>Germany</td>\n" +
-                "  </tr>\n" +
-                "  <tr>\n" +
-                "    <td>Centro comercial Moctezuma</td>\n" +
-                "    <td>Francisco Chang</td>\n" +
-                "    <td>Mexico</td>\n" +
+                "    <td>"+producto.getNombreProducto()+"</td>\n" +
+                "    <td>"+producto.getPrecioProducto()+"</td>\n" +
+                "    <td>"+producto.getDescripcionProducto()+"</td>\n" +
+                "    <td>"+producto.getCategoriaProducto()+"</td>\n" +
                 "  </tr>\n" +
                 "</table>";
 
 
-        HtmlConverter.convertToPdf(HTML, new FileOutputStream("final.pdf"));
+        HtmlConverter.convertToPdf(HTMlRender, new FileOutputStream("final.pdf"));
 
         System.out.println( "El PDF se creo con exito" );
 
