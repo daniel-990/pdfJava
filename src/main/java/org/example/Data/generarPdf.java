@@ -33,35 +33,33 @@ public class generarPdf {
             System.out.println("se obtienen datos de la DB: ");
 
             while(rs.next()){
+
                 System.out.println("*******************************");
                 System.out.println("id: "+rs.getInt("id"));
                 System.out.println("nombre: "+rs.getString("nombre"));
-                System.out.println("precio: "+rs.getInt("precio"));
 
-                    while(rs.next()){
-                        HTMlRender = "<table>\n" +
-                                "  <tr>\n" +
-                                "    <th>Nombre</th>\n" +
-                                "    <th>Precio</th>\n" +
-                                "    <th>descripcion</th>\n" +
-                                "    <th>categoria</th>\n" +
-                                "  </tr>\n" +
-                                "  <tr>\n" +
-                                "    <td>"+rs.getString("nombre")+"</td>\n" +
-                                "    <td>"+rs.getInt("precio")+"</td>\n" +
-                                "    <td>"+rs.getString("descripcion")+"</td>\n" +
-                                "    <td>"+rs.getString("categoria")+"</td>\n" +
-                                "  </tr>\n" +
-                                "</table>";
+                HTMlRender = "<table>\n" +
+                        "  <tr>\n" +
+                        "    <th>Nombre</th>\n" +
+                        "    <th>Precio</th>\n" +
+                        "    <th>descripcion</th>\n" +
+                        "    <th>categoria</th>\n" +
+                        "  </tr>\n" +
+                        "  <tr>\n" +
+                        "    <td>"+rs.getString("nombre")+"</td>\n" +
+                        "    <td>"+rs.getInt("precio")+"</td>\n" +
+                        "    <td>"+rs.getString("descripcion")+"</td>\n" +
+                        "    <td>"+rs.getString("categoria")+"</td>\n" +
+                        "  </tr>\n" +
+                        "</table>";
 
-                        HtmlConverter.convertToPdf(HTMlRender, new FileOutputStream("pdfs/producto_"+rs.getInt("id")+".pdf"));
-                        System.out.println( "El PDF ["+rs.getInt("id")+"] se creo con exito" );
-                    }
-                //se obtiene un dato - el ultimo
-                //HtmlConverter.convertToPdf(HTMlRender, new FileOutputStream("final.pdf"));
-                //System.out.println( "El PDF se creo con exito" );
+                HtmlConverter.convertToPdf(HTMlRender, new FileOutputStream("pdfs/producto_"+rs.getInt("id")+".pdf"));
+                System.out.println( "El PDF ["+rs.getInt("id")+"] se creo con exito" );
+
             }
-
+            //se obtiene un dato - el ultimo
+            //HtmlConverter.convertToPdf(HTMlRender, new FileOutputStream("final.pdf"));
+            //System.out.println( "El PDF se creo con exito" );
 
         }catch (Exception e){
             System.out.println("Error al obtener datos: "+e.getMessage());
