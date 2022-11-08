@@ -3,6 +3,9 @@ package org.example.Data;
 import org.example.Models.Producto;
 import java.util.Scanner;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+
 public class datosPro {
 
         public static void crearProducto(){
@@ -20,9 +23,9 @@ public class datosPro {
                 nombreProducto = input.nextLine();
                 System.out.println("precio:");
                 precioProducto = input.nextDouble();
-                System.out.printf("descripcion:");
+                System.out.println("descripcion:");
                 descripcionProducto = input.nextLine();
-                System.out.println("categorias");
+                System.out.println("categorias:");
                 categoriaProducto = input.nextLine();
 
                 Producto producto = new Producto();
@@ -32,4 +35,5 @@ public class datosPro {
                 producto.setCategoriaProducto(categoriaProducto);
 
         }
+
 }
