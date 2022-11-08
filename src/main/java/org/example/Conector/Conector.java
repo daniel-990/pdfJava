@@ -10,15 +10,15 @@ public class Conector {
     public static final ModelConector datosConeccionMysql = new ModelConector();
 
     public Connection getConexion(){
-        Connection cone = null;
+        Connection con = null;
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            cone = (Connection) DriverManager.getConnection(datosConeccionMysql.getURL(), datosConeccionMysql.getUSER(), datosConeccionMysql.getPASS());
+            con = (Connection) DriverManager.getConnection(datosConeccionMysql.getURL(), datosConeccionMysql.getUSER(), datosConeccionMysql.getPASS());
             //System.out.println("se conecto a la base de datos");
         }catch(Exception e){
             System.out.println("Error: " + e.getMessage());
         }
-        return cone;
+        return con;
     }
 
 }

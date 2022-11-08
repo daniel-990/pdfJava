@@ -13,9 +13,7 @@ import org.example.Controllers.ControllerDatos;
 public class App 
 {
     public static void main( String[] args ) throws IOException {
-
-        ControllerDatos enviar = new ControllerDatos();
-        enviar.insertar("ssa3","sass3",3000,"sss3");
-
+        //mostar menu
+        Menu.mostrarMenu();
     }
 }

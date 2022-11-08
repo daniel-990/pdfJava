@@ -2,9 +2,7 @@ package org.example.Data;
 
 import org.example.Models.Producto;
 import java.util.Scanner;
-
-import java.sql.Connection;
-import java.sql.DriverManager;
+import org.example.Controllers.ControllerDatos;
 
 public class datosPro {
 
@@ -12,27 +10,28 @@ public class datosPro {
 
                 Scanner input = new Scanner(System.in);
 
-                String nombreProducto;
-                double precioProducto;
-                String descripcionProducto;
-                String categoriaProducto;
+                String nombre;
+                String descripcion;
+                double precio;
+                String categorias;
 
-                System.out.println("porfavor ingrese los datos del producto:");
-                System.out.println("*******************");
+                System.out.println("Ingrese los datos del producto");
+
                 System.out.println("nombre:");
-                nombreProducto = input.nextLine();
-                System.out.println("precio:");
-                precioProducto = input.nextDouble();
-                System.out.println("descripcion:");
-                descripcionProducto = input.nextLine();
-                System.out.println("categorias:");
-                categoriaProducto = input.nextLine();
+                nombre = input.nextLine();
 
-                Producto producto = new Producto();
-                producto.setNombreProducto(nombreProducto);
-                producto.setPrecioProducto(precioProducto);
-                producto.setDescripcionProducto(descripcionProducto);
-                producto.setCategoriaProducto(categoriaProducto);
+                System.out.println("descripcion:");
+                descripcion = input.nextLine();
+
+                System.out.println("categorias");
+                categorias = input.nextLine();
+
+                System.out.println("precio");
+                precio = input.nextDouble();
+
+                //ingresar datos productos
+                ControllerDatos enviar = new ControllerDatos();
+                enviar.insertar(nombre,descripcion,precio,categorias);
 
         }
 
