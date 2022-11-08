@@ -46,18 +46,20 @@ public class ControllerDatos {
                 sql = "SELECT * FROM producto";
                 ps = con.prepareStatement(sql);
                 ResultSet rs = ps.executeQuery(sql);
-
+                System.out.println("datos guardados");
                 while(rs.next()){
+                    System.out.println("*******************************");
+                    System.out.println("id: "+rs.getInt("id"));
                     System.out.println("nombre: "+rs.getString("nombre"));
                     System.out.println("precio: "+rs.getInt("precio"));
                 }
 
             }catch (Exception e){
-                System.out.println(e.getMessage());
+                System.out.println("Error al obtener datos: "+e.getMessage());
             }
 
         }catch (Exception e){
-            System.out.println(e.getMessage());
+            System.out.println("Error al guardar datos: "+e.getMessage());
         }
     }
 
