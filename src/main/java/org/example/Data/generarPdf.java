@@ -53,7 +53,7 @@ public class generarPdf {
                         "  </tr>\n" +
                         "</table>";
 
-                HtmlConverter.convertToPdf(HTMlRender, new FileOutputStream("_pdfs/producto_"+rs.getInt("id")+".pdf"));
+                HtmlConverter.convertToPdf(HTMlRender, new FileOutputStream("_pdf/producto_"+rs.getInt("id")+".pdf"));
                 System.out.println( "El PDF ["+rs.getInt("id")+"] se creo con exito" );
 
             }
