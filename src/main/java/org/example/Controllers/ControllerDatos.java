@@ -29,13 +29,6 @@ public class ControllerDatos {
             sql = "INSERT INTO producto (nombre, descripcion, precio, categoria) VALUES ('"+producto.getNombreProducto()+"','"+producto.getDescripcionProducto()+"','"+producto.getPrecioProducto()+"','"+producto.getCategoriaProducto()+"')";
             ps = con.prepareStatement(sql);
 
-            /*
-                System.out.println("nombre: "+producto.getNombreProducto());
-                System.out.println("precio: "+producto.getPrecioProducto());
-                System.out.println("descripcion: "+producto.getDescripcionProducto());
-                System.out.println("categoria: "+producto.getCategoriaProducto());
-            */
-
             ps.executeUpdate();
             System.out.println("se cargan datos");
 

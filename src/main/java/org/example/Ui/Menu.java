@@ -2,6 +2,7 @@ package org.example.Ui;
 
 import org.example.Data.datosPro;
 import org.example.Data.generarPdf;
+import org.example.Data.generarTxt;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -17,7 +18,8 @@ public class Menu {
             System.out.println("Generador de ficha en PDF para productos");
             System.out.println("***************************");
             System.out.println("1. Ingresar datos del producto");
-            System.out.println("2. Generar factura pdf");
+            System.out.println("2. Generar documento Pdf");
+            System.out.println("3. Generar documento Txt");
             System.out.println("0. Salir");
             System.out.println("***************************");
 
@@ -30,7 +32,11 @@ public class Menu {
                 case 2:
                     generarPdf.Pdf();
                     break;
+                case 3:
+                    generarTxt.crearTxtFinal();
+                    break;
             }
         }while(respuesta != 0);
+        System.out.println("salio del programa");
     }
 }
