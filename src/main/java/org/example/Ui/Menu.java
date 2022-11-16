@@ -15,7 +15,7 @@ public class Menu {
     public static void mostrarMenu() throws IOException {
 
         do {
-            System.out.println("Generador de ficha en PDF para productos");
+            System.out.println("Generador de ficha en PDF y TXT para productos");
             System.out.println("***************************");
             System.out.println("1. Ingresar datos del producto");
             System.out.println("2. Generar documento Pdf");

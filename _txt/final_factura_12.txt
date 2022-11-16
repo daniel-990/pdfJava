@@ -1,0 +1,28 @@
+Factura articulo: yuca
+-------Factura-----
+             _.-````'-,_
+   _,.,_ ,-'`           `'-.,_
+ /)     (\                   '``-.
+((      ) )                      `\
+ \)    (_/                        )\
+  |       /)           '    ,'    / \
+  `\    ^'            '     (    /  ))
+    |      _/\ ,     /    ,,`\   (  "`
+     \Y,   |  \  \  | ````| / \_ \
+       `)_/    \  \  )    ( >  ( >
+                \( \(     |/   |/
+    Factura - Bison  /_(/_(    /_(  /_(
+
+------------------------------------------------
+* Daniel Arango Villegas *
+* Sistema de notificacion y factura *
+* https://github.com/daniel-990 *
+--
+Nombre: yuca
+-------------------------------
+Descripcion: esto es un tuberculo
+-------------------------------
+Categoria: verduras, tuberculos
+-------------------------------
+Precio: 2000
+-------------------------------

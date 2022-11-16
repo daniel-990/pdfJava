@@ -1,4 +1,4 @@
-Factura articulo: daniel
+Factura articulo: papa
 -------Factura-----
              _.-````'-,_
    _,.,_ ,-'`           `'-.,_
@@ -18,11 +18,11 @@ Factura articulo: daniel
 * Sistema de notificacion y factura *
 * https://github.com/daniel-990 *
 --
-nombre: daniel
+Nombre: papa
 -------------------------------
-descripcion: daniel
+Descripcion: esto es un tuberculo
 -------------------------------
-categoria: daniel
+Categoria: verduras2, tuberculos
 -------------------------------
-precio: 3221
+Precio: 1500
 -------------------------------

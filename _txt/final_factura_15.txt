@@ -1,4 +1,4 @@
-Factura articulo: arracacha
+Factura articulo: papas
 -------Factura-----
              _.-````'-,_
    _,.,_ ,-'`           `'-.,_
@@ -18,11 +18,11 @@ Factura articulo: arracacha
 * Sistema de notificacion y factura *
 * https://github.com/daniel-990 *
 --
-nombre: arracacha
+Nombre: papas
 -------------------------------
-descripcion: tuberculos
+Descripcion: papas criollas
 -------------------------------
-categoria: ruberculos
+Categoria: papas
 -------------------------------
-precio: 2500
+Precio: 4000
 -------------------------------
