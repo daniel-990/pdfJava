@@ -31,9 +31,28 @@ public class generarTxt {
         precio = input.nextInt();
 
         try {
-            String ruta = "_txt/final_"+nombre+".txt";
+            String ruta = "_txt/final_factura_"+nombre+".txt";
             String contenido = "Factura articulo: "+nombre+"\n" +
-                    "-------------------------------\n" +
+            "-------Factura-----" +
+                    "\n" +
+                    "             _.-````'-,_\n" +
+                    "   _,.,_ ,-'`           `'-.,_\n" +
+                    " /)     (\\                   '``-.\n" +
+                    "((      ) )                      `\\\n" +
+                    " \\)    (_/                        )\\\n" +
+                    "  |       /)           '    ,'    / \\\n" +
+                    "  `\\    ^'            '     (    /  ))\n" +
+                    "    |      _/\\ ,     /    ,,`\\   (  \"`\n" +
+                    "     \\Y,   |  \\  \\  | ````| / \\_ \\\n" +
+                    "       `)_/    \\  \\  )    ( >  ( >\n" +
+                    "                \\( \\(     |/   |/\n" +
+                    "    Factura - Bison  /_(/_(    /_(  /_(\n" +
+                    "\n" +
+                    "------------------------------------------------\n" +
+                    "* Daniel Arango Villegas *\n" +
+                    "* Sistema de notificacion y factura *\n" +
+                    "* https://github.com/daniel-990 *\n" +
+                    "--\n" +
                     "nombre: "+nombre+"\n" +
                     "-------------------------------\n" +
                     "descripcion: "+descripcion+"\n" +
