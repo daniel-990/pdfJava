@@ -2,6 +2,7 @@ package org.example.Data;
 import org.example.Conector.Conector;
 import org.example.Models.Producto;
 
+import javax.swing.*;
 import java.io.BufferedWriter;
 import java.io.File;  // Import the File class
 import java.io.FileWriter;
@@ -30,7 +31,9 @@ public class generarTxt {
             sql = "SELECT * FROM producto";
             ps = con.prepareStatement(sql);
             ResultSet rs = ps.executeQuery(sql);
-            System.out.println("se obtienen datos de la DB: ");
+            //System.out.println("se obtienen datos de la DB: ");
+            JOptionPane.showMessageDialog(null,"se obtienen datos de la DB para archivos TXT",
+                    "INFORMATION_MESSAGE", JOptionPane.INFORMATION_MESSAGE);
 
             while(rs.next()){
 
@@ -70,7 +73,8 @@ public class generarTxt {
                 if (file.exists()) {
                     //System.out.println("esto existe");
                     file.createNewFile();
-                    System.out.println("El TXT [" + rs.getInt("id") + "] se creo con exito");
+                    //System.out.println("El TXT [" + rs.getInt("id") + "] se creo con exito");
+                    //JOptionPane.showMessageDialog(null, "El TXT [" + rs.getInt("id") + "] se creo con exito","INFORMATION_MESSAGE", JOptionPane.INFORMATION_MESSAGE);
                 }
 
                 FileWriter fw = new FileWriter(file);
@@ -78,6 +82,8 @@ public class generarTxt {
                 bw.write(contenido);
                 bw.close();
             }
+            JOptionPane.showMessageDialog(null, "El TXT se creo con exito",
+                    "INFORMATION_MESSAGE", JOptionPane.INFORMATION_MESSAGE);
 
         } catch (Exception e) {
             e.printStackTrace();

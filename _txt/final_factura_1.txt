@@ -1,4 +1,4 @@
-Factura articulo: papas
+Factura articulo: ssa
 -------Factura-----
              _.-````'-,_
    _,.,_ ,-'`           `'-.,_
@@ -18,11 +18,11 @@ Factura articulo: papas
 * Sistema de notificacion y factura *
 * https://github.com/daniel-990 *
 --
-Nombre: papas
+Nombre: ssa
 -------------------------------
-Descripcion: papas criollas
+Descripcion: sass
 -------------------------------
-Categoria: papas
+Categoria: ssss
 -------------------------------
-Precio: 4000
+Precio: 1000
 -------------------------------

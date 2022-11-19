@@ -10,7 +10,7 @@ import org.example.Controllers.ControllerDatos;
  * obtener un Pdf de un Html
  *
  */
-public class App 
+public class App
 {
     public static void main( String[] args ) throws IOException {
         //mostar menu

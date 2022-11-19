@@ -11,6 +11,8 @@ import com.itextpdf.html2pdf.HtmlConverter;
 import org.example.Models.Producto;
 import org.example.Conector.Conector;
 
+import javax.swing.*;
+
 public class generarPdf {
 
     public static Conector conectar = new Conector();
@@ -27,7 +29,9 @@ public class generarPdf {
             sql = "SELECT * FROM producto";
             ps = con.prepareStatement(sql);
             ResultSet rs = ps.executeQuery(sql);
-            System.out.println("se obtienen datos de la DB: ");
+            //System.out.println("se obtienen datos de la DB: ");
+            JOptionPane.showMessageDialog(null,"se obtienen datos de la DB para archivos PDF",
+                    "INFORMATION_MESSAGE", JOptionPane.INFORMATION_MESSAGE);
 
             while(rs.next()){
                 HTMlRender = "Factura: "+rs.getString("nombre")+"<hr>" +
@@ -51,15 +55,21 @@ public class generarPdf {
                         "</table>";
 
                 HtmlConverter.convertToPdf(HTMlRender, new FileOutputStream("_pdf/producto_"+rs.getInt("id")+".pdf"));
-                System.out.println( "El PDF ["+rs.getInt("id")+"] se creo con exito" );
+                //System.out.println( "El PDF ["+rs.getInt("id")+"] se creo con exito" );
+                //JOptionPane.showMessageDialog(null,"El PDF ["+rs.getInt("id")+"] se creo con exito" , "INFORMATION_MESSAGE", JOptionPane.INFORMATION_MESSAGE);
 
             }
             //se obtiene un dato - el ultimo
             //HtmlConverter.convertToPdf(HTMlRender, new FileOutputStream("final.pdf"));
             //System.out.println( "El PDF se creo con exito" );
+            JOptionPane.showMessageDialog(null,"El PDF se creo con exito" ,
+                    "INFORMATION_MESSAGE", JOptionPane.INFORMATION_MESSAGE);
 
         }catch (Exception e){
-            System.out.println("Error al obtener datos: "+e.getMessage());
+            //System.out.println("Error al obtener datos: "+e.getMessage());
+            //System.out.println("Error al obtener datos: "+e.getMessage());
+            JOptionPane.showMessageDialog(null,"Error al obtener datos: "+e.getMessage(),
+                    "INFORMATION_MESSAGE", JOptionPane.INFORMATION_MESSAGE);
         }
 
     }

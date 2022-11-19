@@ -5,6 +5,7 @@ package org.example.Controllers;
 import org.example.Conector.Conector;
 import org.example.Models.Producto;
 
+import javax.swing.*;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -30,10 +31,14 @@ public class ControllerDatos {
             ps = con.prepareStatement(sql);
 
             ps.executeUpdate();
-            System.out.println("se cargan datos");
+            //System.out.println("se cargan datos");
+            JOptionPane.showMessageDialog(null, "Se cargan datos",
+                    "INFORMATION_MESSAGE", JOptionPane.INFORMATION_MESSAGE);
 
         }catch (Exception e){
-            System.out.println("Error al guardar datos: "+e.getMessage());
+            //System.out.println("Error al guardar datos: "+e.getMessage());
+            JOptionPane.showMessageDialog(null, "Error al guardar datos: "+e.getMessage(),
+                    "INFORMATION_MESSAGE", JOptionPane.INFORMATION_MESSAGE);
         }
     }
 
