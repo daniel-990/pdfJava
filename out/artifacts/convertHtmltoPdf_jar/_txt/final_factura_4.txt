@@ -1,0 +1,28 @@
+Factura articulo: daniel
+-------Factura-----
+             _.-````'-,_
+   _,.,_ ,-'`           `'-.,_
+ /)     (\                   '``-.
+((      ) )                      `\
+ \)    (_/                        )\
+  |       /)           '    ,'    / \
+  `\    ^'            '     (    /  ))
+    |      _/\ ,     /    ,,`\   (  "`
+     \Y,   |  \  \  | ````| / \_ \
+       `)_/    \  \  )    ( >  ( >
+                \( \(     |/   |/
+    Factura - Bison  /_(/_(    /_(  /_(
+
+------------------------------------------------
+* Daniel Arango Villegas *
+* Sistema de notificacion y factura *
+* https://github.com/daniel-990 *
+--
+Nombre: daniel
+-------------------------------
+Descripcion: esto es un solo un producto de prueba
+-------------------------------
+Categoria: pruebas normalizadas
+-------------------------------
+Precio: 1550
+-------------------------------

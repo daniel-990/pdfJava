@@ -1,0 +1,28 @@
+Factura articulo: esto es una prueba
+-------Factura-----
+             _.-````'-,_
+   _,.,_ ,-'`           `'-.,_
+ /)     (\                   '``-.
+((      ) )                      `\
+ \)    (_/                        )\
+  |       /)           '    ,'    / \
+  `\    ^'            '     (    /  ))
+    |      _/\ ,     /    ,,`\   (  "`
+     \Y,   |  \  \  | ````| / \_ \
+       `)_/    \  \  )    ( >  ( >
+                \( \(     |/   |/
+    Factura - Bison  /_(/_(    /_(  /_(
+
+------------------------------------------------
+* Daniel Arango Villegas *
+* Sistema de notificacion y factura *
+* https://github.com/daniel-990 *
+--
+Nombre: esto es una prueba
+-------------------------------
+Descripcion: esto es una prueba de descripcion
+-------------------------------
+Categoria: pruebas
+-------------------------------
+Precio: 3400
+-------------------------------

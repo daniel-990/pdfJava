@@ -1,0 +1,28 @@
+Factura articulo: cigarros
+-------Factura-----
+             _.-````'-,_
+   _,.,_ ,-'`           `'-.,_
+ /)     (\                   '``-.
+((      ) )                      `\
+ \)    (_/                        )\
+  |       /)           '    ,'    / \
+  `\    ^'            '     (    /  ))
+    |      _/\ ,     /    ,,`\   (  "`
+     \Y,   |  \  \  | ````| / \_ \
+       `)_/    \  \  )    ( >  ( >
+                \( \(     |/   |/
+    Factura - Bison  /_(/_(    /_(  /_(
+
+------------------------------------------------
+* Daniel Arango Villegas *
+* Sistema de notificacion y factura *
+* https://github.com/daniel-990 *
+--
+Nombre: cigarros
+-------------------------------
+Descripcion: esto es un cigarro
+-------------------------------
+Categoria: fumar
+-------------------------------
+Precio: 5000
+-------------------------------
